@@ -1,0 +1,14 @@
+name: schedule job1
+
+on:
+ workflow_dispatch:
+ schedule:
+   - cron: "0 0 * * *" 
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print massage
+        run: echo 'schedule workflow executed"
