@@ -11,4 +11,4 @@ jobs:
 
     steps:
       - name: Print massage
-        run: echo 'schedule workflow executed"
+        run: echo "schedule workflow executed"
